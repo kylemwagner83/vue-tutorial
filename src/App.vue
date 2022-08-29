@@ -2,18 +2,18 @@
   export default {
     data() {
       return {
-        titleClass: 'title'
+        count: 0
+      }
+    },
+    methods: {
+      increment() {
+        this.count++
       }
     }
   }
   </script>
   
   <template>
-    <h1 :class="titleClass">Make me red</h1> <!-- add dynamic class binding here -->
+    <!-- make this button work -->
+    <button @click="increment">count is: {{ count }}</button>
   </template>
-  
-  <style>
-  .title {
-    color: red;
-  }
-  </style>
