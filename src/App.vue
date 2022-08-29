@@ -2,12 +2,18 @@
   export default {
     data() {
       return {
-        message: 'Hello, world!'
+        titleClass: 'title'
       }
     }
   }
   </script>
   
   <template>
-    <h1>{{message}}</h1>
+    <h1 :class="titleClass">Make me red</h1> <!-- add dynamic class binding here -->
   </template>
+  
+  <style>
+  .title {
+    color: red;
+  }
+  </style>
